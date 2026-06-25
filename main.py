@@ -29,7 +29,7 @@ def main() -> None:
     parser.add_argument(
         "--port",
         type=int,
-        default=8000,
+        default=9000,
         help="Port to serve the site on. Default: 8000",
     )
     args = parser.parse_args()
