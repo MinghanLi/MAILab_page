@@ -181,9 +181,15 @@ a {
 
 .hero-actions {
   display: flex;
-  flex-wrap: wrap;
-  gap: 14px;
+  flex-wrap: nowrap;
+  gap: 10px;
   margin-top: 30px;
+}
+
+.hero-actions .button {
+  padding: 11px 15px;
+  font-size: 0.82rem;
+  white-space: nowrap;
 }
 
 .button {
@@ -442,6 +448,16 @@ a {
   object-fit: cover;
 }
 
+.profile-image-top {
+  object-position: center top;
+}
+
+.student-profile-media {
+  aspect-ratio: 1947 / 1827;
+  min-height: 0;
+  align-self: start;
+}
+
 .profile-links {
   display: grid;
   gap: 12px;
@@ -672,6 +688,10 @@ a {
 
   .hero-copy {
     padding: 32px 24px;
+  }
+
+  .hero-actions {
+    flex-wrap: wrap;
   }
 
   .contact-strip {
