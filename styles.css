@@ -338,7 +338,8 @@ a {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 16px;
-  margin-top: 20px;
+  width: min(100%, 820px);
+  margin: 20px auto 0;
 }
 
 .paper-reading-gallery figure {
@@ -348,8 +349,7 @@ a {
 .paper-reading-gallery img {
   display: block;
   width: 100%;
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
+  height: auto;
   border-radius: 18px;
 }
 
